@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Codekro-soft</title>
+    </head>
+    <h1>Codekro-soft</h1>
+    <body>
+        <p>Buy products from codekro-soft!</p>
+        <div id="signin">
+            <label>Enter your email and Sign in!
+                <input id="email" type="email">
+            </label>
+            <button onclick="go()">Go!</button>
+            <p id="message"></p>
+            <script>
+                function go(){
+                    var email;
+                    email = document.getElementById("email").value;
+                    document.getElementById("message").innerHTML = "Hi " + email + ". The message will be sent in another window.";
+                    window.open("codekro-soft-mail.html");
+                }
+            </script>
+        </div>
+        <div id="orderbook">
+            <select id="book">
+                <option value="html5">How to code in HTML5</option>
+                <option value="python">How to code in PYTHON</option>
+                <option value="ruby">How to code in RUBY</option>
+                <option value="javascript">How to code in JavaScript</option>
+            </select>
+            <input id="how-many" type="number">
+            <button onclick="placeorder()">Place order!</button>
+            <p id="price"></p>
+            <script>
+                function placeorder(){
+                    var book;
+                    var how_many;
+                    book = document.getElementById("book").value;
+                    how_many = document.getElementById("how-many").value;
+                    document.getElementById("price").innerHTML = "Your price is $" + 10*how_many + " .";
+					          //Hi im derek and i am the creator of codekro-soft.
+                }
+                    
+            </script>
+        </div>
+        <iframe src="http://hexgl.bkcore.com/play/" width="1000" height="500">
+
+        </iframe>
+        <iframe src="https://playcanv.as/p/JtL2iqIH/" width="1000" height="500">
+
+        </iframe>
+    </body>
+</html>
+        
